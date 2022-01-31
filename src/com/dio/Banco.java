@@ -23,4 +23,12 @@ public class Banco {
         this.contas = contas;
     }
 
+    @Override
+    public String toString() {
+        String strConteudo = "[Banco\n";
+        for (Conta conta : contas) {
+            strConteudo += "conta=" + conta + '}';
+        }
+        return strConteudo + "]";
+    }
 }
